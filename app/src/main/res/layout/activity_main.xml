@@ -3,11 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FF00FF"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.android.touchevent.view.MyButton
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         android:text="点击测试"
+        android:background="#00FF00"
+
         />
 </com.android.touchevent.view.MyLayout>

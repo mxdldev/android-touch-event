@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidTouchEvent</string>
+    <string name="title_activity_trip_detail">MapTouchActivity</string>
 </resources>

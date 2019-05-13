@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_map_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <CheckBox
+        android:id="@+id/btn_map_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/map"
+        android:layout_alignBottom="@+id/map"
+        android:background="@drawable/ic_zoom_btn"
+        android:button="@null"
+        />
+</RelativeLayout>

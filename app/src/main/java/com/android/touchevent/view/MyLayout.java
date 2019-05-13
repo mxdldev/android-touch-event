@@ -25,18 +25,18 @@ public class MyLayout extends LinearLayout {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.v(TAG,"MyLayout dispatchTouchEvent start:"+MotionEventUtil.getMotionEventName(ev));
-        return true;
+        return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         Log.v(TAG,"MyLayout onInterceptTouchEvent start:"+MotionEventUtil.getMotionEventName(ev));
-        return true;
+        return super.onInterceptTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.v(TAG,"MyLayout onTouchEvent start:"+MotionEventUtil.getMotionEventName(event));
-        return true;
+        return super.onTouchEvent(event);
     }
 }

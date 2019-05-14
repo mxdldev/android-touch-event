@@ -28,7 +28,7 @@
             />
 
 
-        <com.android.touchevent.view.TransScrollView
+        <com.android.touchevent.view.BlogScrollView
             android:id="@+id/view_scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -234,6 +234,6 @@
                         />
                 </LinearLayout>
             </LinearLayout>
-        </com.android.touchevent.view.TransScrollView>
+        </com.android.touchevent.view.BlogScrollView>
     </RelativeLayout>
 </LinearLayout>

@@ -25,13 +25,13 @@ public class MyButton extends Button {
     }
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.v(TAG,"MyButton dispatchTouchEvent start:"+MotionEventUtil.getMotionEventName(ev));
+        Log.v(TAG,"MyButton isTouchTransView start:"+MotionEventUtil.getMotionEventName(ev));
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.v(TAG,"MyButton onTouchEvent start:"+MotionEventUtil.getMotionEventName(event));
+        Log.v(TAG,"MyButton isTouchTransView start:"+MotionEventUtil.getMotionEventName(event));
         return super.onTouchEvent(event);
     }
 }

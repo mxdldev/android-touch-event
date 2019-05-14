@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.v(TAG,"MainActivity dispatchTouchEvent start:"+MotionEventUtil.getMotionEventName(ev));
+        Log.v(TAG,"MainActivity isTouchTransView start:"+MotionEventUtil.getMotionEventName(ev));
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.v(TAG,"MainActivity onTouchEvent start:"+MotionEventUtil.getMotionEventName(event));
+        Log.v(TAG,"MainActivity isTouchTransView start:"+MotionEventUtil.getMotionEventName(event));
         return super.onTouchEvent(event);
     }
 }

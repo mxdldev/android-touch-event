@@ -6,8 +6,8 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.RelativeLayout;
-
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.TextureMapView;
 import com.android.touchevent.R;
@@ -24,6 +24,7 @@ public class BlogMapView extends RelativeLayout {
     private AMap mMap;
     private TextureMapView mTextureMapView;
     private CheckBox mBtnMapZoom;
+    private CompoundButton.OnCheckedChangeListener mChangeListener;
 
     public BlogMapView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -33,6 +34,14 @@ public class BlogMapView extends RelativeLayout {
         mMap.getUiSettings().setZoomControlsEnabled(false);
 
         mBtnMapZoom = findViewById(R.id.btn_map_zoom);
+        mBtnMapZoom.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (mChangeListener != null) {
+                    mChangeListener.onCheckedChanged(compoundButton, b);
+                }
+            }
+        });
     }
 
     public boolean dispatchMapTouchEvent(MotionEvent event) {
@@ -45,32 +54,18 @@ public class BlogMapView extends RelativeLayout {
     }
 
     public void setBtnMapZoomChecked(boolean b) {
-        if (mBtnMapZoom != null) {
-            mBtnMapZoom.setChecked(b);
-        }
+        mBtnMapZoom.setChecked(b);
     }
 
     public void onCreate(Bundle bundle) {
         mTextureMapView.onCreate(bundle);
     }
 
-    public void onResume() {
-        mTextureMapView.onResume();
-    }
-
-    public void onSaveInstanceState(Bundle outState) {
-        mTextureMapView.onSaveInstanceState(outState);
-    }
-
-    public void onPause() {
-        mTextureMapView.onPause();
-    }
-
-    public void onDestroy() {
-        mTextureMapView.onDestroy();
-    }
-
     public AMap getMap() {
         return mMap;
+    }
+
+    public void setChangeListener(CompoundButton.OnCheckedChangeListener changeListener) {
+        mChangeListener = changeListener;
     }
 }

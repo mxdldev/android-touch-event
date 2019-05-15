@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layout_usecar_arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                tools:ignore="MissingDefaultResource">
+    <CheckBox
+        android:id="@+id/check_trip_expend"
+        android:layout_width="12dp"
+        android:layout_height="7dp"
+        android:background="@drawable/bg_usecar_arrow"
+        android:button="@null"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

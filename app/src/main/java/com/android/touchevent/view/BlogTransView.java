@@ -72,8 +72,6 @@ public class BlogTransView extends RelativeLayout {
         mBtnZoomChangeListener = listener;
     }
 
-
-
     public void setBtnMapZoomChecked(boolean b) {
         if (mBtnMapZoom != null) {
             mBtnMapZoom.setChecked(b);
@@ -89,7 +87,6 @@ public class BlogTransView extends RelativeLayout {
             return false;
         }
     }
-
     public void setDispatchEventListener(DispatchEventListener dispatchEventListener) {
         mDispatchEventListener = dispatchEventListener;
     }

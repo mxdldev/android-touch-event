@@ -38,10 +38,10 @@ public class MapTouchActivity extends AppCompatActivity {
 
         mBlogMapView.onCreate(savedInstanceState);
 
-        init();
+        initListener();
 
     }
-    public void init() {
+    public void initListener() {
         //设置BlogScrollView的透明部分的监听器
         mBlogScrollView.setTransViewTouchListener(new BlogTransView.OnTouchEventListener() {
             @Override

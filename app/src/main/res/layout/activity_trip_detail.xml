@@ -10,7 +10,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-
         />
 
     <RelativeLayout
@@ -26,20 +25,16 @@
             android:layout_height="250dp"
             android:layout_alignParentTop="true"
             />
-
-
         <com.android.touchevent.view.BlogScrollView
             android:id="@+id/view_scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             >
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <com.android.touchevent.view.BlogTransView
                     android:id="@+id/view_blog_trans"
                     android:layout_width="match_parent"
@@ -53,7 +48,6 @@
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
                     android:orientation="vertical">
-
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
@@ -61,7 +55,6 @@
                         android:paddingLeft="16dp"
                         android:paddingRight="16dp"
                         >
-
                         <TextView
                             android:id="@+id/txt_trip_title"
                             android:layout_width="wrap_content"
@@ -224,7 +217,6 @@
                             android:padding="10dp"
                             android:text="RxJava线程切换之subscribeOn和observeOn详解"
                             />
-
                     </LinearLayout>
 
                     <View

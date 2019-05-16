@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectTouchActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.这个不容易点击"
+        />
+    <CheckBox
+        android:id="@+id/chb"
+        android:layout_width="12dp"
+        android:layout_height="7dp"
+        android:background="@drawable/bg_usecar_arrow"
+        android:button="@null"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.这个很容点点击"
+        android:layout_marginTop="20dp"
+        />
+    <com.android.touchevent.view.FatArrowView
+        android:id="@+id/view_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.android.touchevent.view.SettingBarView
+        android:id="@+id/view_car_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:set_title="车辆选择"
+        app:set_content_hint="由公车负责人分配"
+        android:layout_marginTop="20dp"
+        app:set_right_icon="@mipmap/usecar_list_icon_into"
+        app:set_right_icon_visable="true"
+        />
+    <com.android.touchevent.view.SettingBarView
+        android:id="@+id/view_start_positon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:set_title="始发地点"
+        app:set_content_hint="请输入"
+        app:set_right_icon="@mipmap/usecar_list_icon_into"
+        android:layout_marginTop="20dp"
+        app:set_right_icon_visable="true"
+        />
+</LinearLayout>

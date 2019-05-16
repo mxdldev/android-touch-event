@@ -24,7 +24,7 @@ public class MyLayout extends LinearLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.v(TAG,"MyLayout isTouchTransView start:"+MotionEventUtil.getMotionEventName(ev));
+        Log.v(TAG,"MyLayout dispatchTouchEvent start:"+MotionEventUtil.getMotionEventName(ev));
         return super.dispatchTouchEvent(ev);
     }
 
@@ -36,7 +36,7 @@ public class MyLayout extends LinearLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.v(TAG,"MyLayout isTouchTransView start:"+MotionEventUtil.getMotionEventName(event));
+        Log.v(TAG,"MyLayout onTouchEvent start:"+MotionEventUtil.getMotionEventName(event));
         return super.onTouchEvent(event);
     }
 }

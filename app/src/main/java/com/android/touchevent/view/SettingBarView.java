@@ -123,11 +123,13 @@ public class SettingBarView extends RelativeLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
+        //当处于不可编辑状态的时候拦截该事件，否则该事件就继续往下分发
         return !isEdit;
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        //当拦截该事件的时候就把它分发给自己的根View，响应全局的点击事件
         return layoutSettingBar.onTouchEvent(event);
     }
 

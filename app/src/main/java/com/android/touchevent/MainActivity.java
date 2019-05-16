@@ -16,30 +16,37 @@ import com.android.touchevent.util.MotionEventUtil;
  * Version:     V1.0.0<br>
  * Update:     <br>
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     public static String TAG = "MYTAG";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.btn_test).setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,MapTouchActivity.class));
-            }
-        });
+        findViewById(R.id.btn1).setOnClickListener(this);
+        findViewById(R.id.btn2).setOnClickListener(this);
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.v(TAG,"MainActivity isTouchTransView start:"+MotionEventUtil.getMotionEventName(ev));
+        Log.v(TAG,"MainActivity dispatchTouchEvent start:"+MotionEventUtil.getMotionEventName(ev));
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.v(TAG,"MainActivity isTouchTransView start:"+MotionEventUtil.getMotionEventName(event));
+        Log.v(TAG,"MainActivity onTouchEvent start:"+MotionEventUtil.getMotionEventName(event));
         return super.onTouchEvent(event);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn1:
+                startActivity(new Intent(MainActivity.this,SelectTouchActivity.class));
+                break;
+            case R.id.btn2:
+                startActivity(new Intent(MainActivity.this,MapTouchActivity.class));
+                break;
+        }
     }
 }

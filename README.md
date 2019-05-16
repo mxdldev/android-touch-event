@@ -7,7 +7,7 @@ github源码下载地址：https://github.com/geduo83/android-touch-event</br>
 [Android事件分发机制的探索与发现之View篇](https://blog.csdn.net/geduo_83/article/details/90145083)</br>
 [Android事件分发机制的探索与发现之ViewGroup篇](https://blog.csdn.net/geduo_83/article/details/90145050)</br>
 [Android事件分发机制的探索与发现之Activity篇](https://blog.csdn.net/geduo_83/article/details/90145008)</br>
-[Android事件传递机制的探索与发现之总结篇](https://blog.csdn.net/geduo_83/article/details/90144921)</br>
+[Android事件分发机制的探索与发现之总结篇](https://blog.csdn.net/geduo_83/article/details/90144921)</br>
 [Android事件分发机制在实战开发中的应用之一](https://blog.csdn.net/geduo_83/article/details/90243041)</br>
 [Android事件分发机制在实战开发中的应用之二](https://blog.csdn.net/geduo_83/article/details/90265897)</br>
 

@@ -3,7 +3,7 @@
 
 版权声明：本文来自门心叼龙的博客，属于原创内容，转载请注明出处：https://blog.csdn.net/geduo_83/article/details/90145083
 
-github源码下载地址：https://github.com/geduo83/android-touch-event
+github源码下载地址：https://github.com/geduo83/android-touch-event</br>
 [Android事件分发机制的探索与发现之View篇](https://blog.csdn.net/geduo_83/article/details/90145083)</br>
 [Android事件分发机制的探索与发现之ViewGroup篇](https://blog.csdn.net/geduo_83/article/details/90145050)</br>
 [Android事件分发机制的探索与发现之Activity篇](https://blog.csdn.net/geduo_83/article/details/90145008)</br>

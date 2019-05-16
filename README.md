@@ -1,12 +1,15 @@
 # android-touch-event
 事件分发好比是领导给下属派活，假如有一个小公司，就三个级别，老板，经理，员工，老板现在有一个任务，他首先会把这是任务派给经理，然后经理接到这个任务，会把这个任务交给下面的员工去完成，如果这个员工觉得这个任务能搞定，那么他就把这个任务完成了，如果搞不定他会告诉他们的经理，经理拿到这个任务之后，如果经理能搞定，经理就自己完成了，如果他也搞不定，他就会去找老板，最终老板自己把这个任务给完成了。这个过程是不是和我们的View事件分发很像，简直是太形象了，我非常佩服谷歌的这些大神们，他们把事件传递机制设计的竟如此精妙。
-版权声明：本文来自门心叼龙的博客，属于原创内容，转载请注明出处：https://blog.csdn.net/geduo_83/article/details/90144921
 
-github源码下载地址：https://github.com/geduo83/android-touch-event<br>
-[Android事件传递机制的探索与发现之View篇](https://blog.csdn.net/geduo_83/article/details/90145083)<br>
-[Android事件传递机制的探索与发现之ViewGroup篇](https://blog.csdn.net/geduo_83/article/details/90145050)<br>
-[Android事件传递机制的探索与发现之Activity篇](https://blog.csdn.net/geduo_83/article/details/90145008)<br>
-[Android事件传递机制的探索与发现之总结篇](https://blog.csdn.net/geduo_83/article/details/90144921)<br>
+版权声明：本文来自门心叼龙的博客，属于原创内容，转载请注明出处：https://blog.csdn.net/geduo_83/article/details/90145083
+
+github源码下载地址：https://github.com/geduo83/android-touch-event
+[Android事件分发机制的探索与发现之View篇](https://blog.csdn.net/geduo_83/article/details/90145083)</br>
+[Android事件分发机制的探索与发现之ViewGroup篇](https://blog.csdn.net/geduo_83/article/details/90145050)</br>
+[Android事件分发机制的探索与发现之Activity篇](https://blog.csdn.net/geduo_83/article/details/90145008)</br>
+[Android事件传递机制的探索与发现之总结篇](https://blog.csdn.net/geduo_83/article/details/90144921)</br>
+[Android事件分发机制在实战开发中的应用之一](https://blog.csdn.net/geduo_83/article/details/90243041)</br>
+[Android事件分发机制在实战开发中的应用之二](https://blog.csdn.net/geduo_83/article/details/90265897)</br>
 
 在这之前我在网上看到一篇文章也是关于andoid的事件分发机制，我觉得他的总结比喻很到位，他说事件分发好比是领导给下属派活，假如有一个小公司，就三个级别，老板，经理，员工，老板现在有一个任务，他首先会把这是任务派给经理，然后经理接到这个任务，会把这个任务交给下面的员工去完成，如果这个员工觉得这个任务能搞定，那么他就把这个任务完成了，如果搞不定他会告诉他们的经理，经理拿到这个任务之后，如果经理能搞定，经理就自己完成了，如果他也搞不定，他就会去找老板，最终老板自己把这个任务给完成了。这个过程是不是和我们的View事件分发很像，我太佩服我这位网友了，简直是太形象了，但我更佩服谷歌的这些大神们，他们把事件传递机制设计的竟如此精妙。
 

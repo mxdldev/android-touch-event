@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.android.touchevent.util.MotionEventUtil;
+import com.android.touchevent.view.MyButton;
 
 /**
  * Description: <MyLayout><br>
@@ -18,6 +19,8 @@ import com.android.touchevent.util.MotionEventUtil;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     public static String TAG = "MYTAG";
+
+    public MyButton mMyButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
